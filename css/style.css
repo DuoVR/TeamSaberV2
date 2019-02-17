@@ -1,0 +1,191 @@
+@font-face {
+  font-family: beon;
+  src: url(../fonts/beon/beon.ttf);
+}
+
+body {
+  background: #111111;
+}
+
+.team {
+  color: #fff;
+  font-family: beon;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-animation: neonred 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonred 1.5s ease-in-out infinite alternate;
+  animation: neonred 1.5s ease-in-out infinite alternate;
+}
+
+.saber {
+  color: #fff;
+  font-family: beon;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-animation: neonblue 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonblue 1.5s ease-in-out infinite alternate;
+  animation: neonblue 1.5s ease-in-out infinite alternate;
+}
+
+.logo {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 60px;
+  padding: 15px 0px;
+}
+
+.nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  padding: 5px 0px;
+  max-width: 750px;
+  text-align: center;
+}
+
+li {
+  white-space: nowrap;
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.trophy {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.discord {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.discord-color {
+  color: #7289DA;
+}
+
+.wrapper {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding-top: 20px;
+}
+
+.scoretable {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.scoretable td {
+  padding: 5px 0px;
+  white-space: nowrap;
+}
+
+.col1 {
+  text-align: center;
+  width: 100%
+}
+
+.col2 {
+  text-align: left;
+  width: 20%
+}
+
+.gold {
+  color: #FFB900;
+}
+
+.silver {
+  color: #BFBFBF;
+}
+
+.bronze {
+  color: #C16C00;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+  width: auto;
+}
+
+a:hover {
+  border-bottom: 1px solid white;
+}
+
+@-webkit-keyframes neonred {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f00, 0 0 70px #f00, 0 0 80px #f00, 0 0 100px #f00, 0 0 150px #f00;
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f00, 0 0 35px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 75px #f00;
+  }
+}
+
+@-webkit-keyframes neonblue {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00f, 0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f, 0 0 150px #00f;
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00f, 0 0 35px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 75px #00f;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+    .leftside {
+        display: none;
+    }
+
+    .rightside {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    li {
+      font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .leftside {
+        display: none;
+    }
+
+    .rightside {
+      width: 100%;
+      font-size: 10px;
+    }
+
+    li {
+      font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .leftside {
+        display: none;
+    }
+
+    .rightside {
+      width: 100%;
+      font-size: 8px;
+    }
+
+    li {
+      font-size: 8px;
+    }
+}
