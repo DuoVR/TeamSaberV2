@@ -125,6 +125,11 @@ a:hover {
   border-bottom: 1px solid white;
 }
 
+#loading {
+  align: center;
+  text-align: center;
+}
+
 @-webkit-keyframes neonred {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f00, 0 0 70px #f00, 0 0 80px #f00, 0 0 100px #f00, 0 0 150px #f00;

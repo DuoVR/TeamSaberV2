@@ -11,6 +11,8 @@ $(document).ready(function() {
     url: "http://networkauditor.org/api-teamsaber/getteams/",
     dataType: "json",
     success: function(data) {
+      var loading = $('#loading');
+      loading.hide()
       readData(data);
     }
   });
@@ -31,8 +33,6 @@ $(document).ready(function() {
     teams.sort(function(a, b) {
       return b.score - a.score
     });
-
-    console.log(teams);
 
     var tbody = $('tbody');
 
