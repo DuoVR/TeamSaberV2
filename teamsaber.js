@@ -38,9 +38,9 @@ $(document).ready(function() {
 
     for (var i in teams) {
       var team = teams[i]
-      var html = '<tr><td class="col1">'
+      var html = '<tr><td class="col1"><font color="' + team["color"] + '">'
       html += team["name"] + ' - '
-      html += team["score"] + '</td></tr>'
+      html += team["score"] + '</font></td></tr>'
 
       tbody.append(html);
     }
