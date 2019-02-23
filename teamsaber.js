@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   $.ajax({
     type: "GET",
-    url: "http://networkauditor.org/api-teamsaber/getteams/",
+    url: "http://networkauditor.org/api-teamsaber/getteams/duo",
     dataType: "json",
     success: function(data) {
       var loading = $('#loading');
