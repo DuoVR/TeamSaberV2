@@ -81,6 +81,28 @@ teams = {
    }
 }
 
+points = {
+  1: "+15",
+  2: "+12",
+  3: "+10",
+  4: "+9",
+  5: "+8",
+  6: "+7",
+  7: "+6",
+  8: "+5",
+  9: "+5",
+  10: "+4",
+  11: "+4",
+  12: "+3",
+  13: "+3",
+  14: "+2",
+  15: "+2",
+  16: "+1",
+  17: "+1",
+  18: "+1",
+  19: "+1"
+}
+
 $(document).ready(function() {
   $.ajaxPrefilter(function(options) {
     if (options.crossDomain && jQuery.support.cors) {
@@ -116,9 +138,11 @@ $(document).ready(function() {
         }
         var team = teams[teamid]["teamName"];
         var color = teams[teamid]["color"];
+        var point = points[rank]
         var html = '<tr><td class="col1"><font color="' + color + '">';
-        html += '[' + team + '] ' + player + ' : ';
-        html += score.toLocaleString() + '</font></td></tr>';
+        html += rank.toLocaleString()
+        html += ' : [' + team + '] ' + player + ' : ';
+        html += score.toLocaleString() + " (" + point + ')</font></td></tr>';
 
         tbody.append(html);
       }
