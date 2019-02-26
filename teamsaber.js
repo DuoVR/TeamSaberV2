@@ -140,7 +140,13 @@ $(document).ready(function() {
         var color = teams[teamid]["color"];
         var point = points[rank]
         var html = '<tr><td class="col1"><font color="' + color + '">';
-        html += rank.toLocaleString()
+        if (rank == 1) {
+          ranked = "♛";
+        }
+        else {
+          ranked = rank.toLocaleString()
+        }
+        html += ranked
         html += ' : [' + team + '] ' + player + ' : ';
         html += score.toLocaleString() + " (" + point + ')</font></td></tr>';
 
