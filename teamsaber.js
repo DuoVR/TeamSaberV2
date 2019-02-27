@@ -78,6 +78,10 @@ teams = {
    "team19":{
       "teamName":"BackStabbers",
       "color":"#940c0c",
+   },
+   "-1":{
+      "teamName":"???",
+      "color":"#FFFFFF",
    }
 }
 
