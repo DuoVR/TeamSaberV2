@@ -104,7 +104,12 @@ points = {
   16: "+1",
   17: "+1",
   18: "+1",
-  19: "+1"
+  19: "+1",
+  20: "+0",
+  21: "+0",
+  22: "+0",
+  24: "+0",
+  25: "+0"
 }
 
 $(document).ready(function() {
@@ -117,7 +122,7 @@ $(document).ready(function() {
 
   $.ajax({
     type: "GET",
-    url: "https://networkauditor.org/api-teamsaber/getsongleaderboards/all/19/",
+    url: "https://networkauditor.org/api-teamsaber/getsongleaderboards/all/25/",
     dataType: "json",
     success: function(data) {
       var loading = $('#loading');
