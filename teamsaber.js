@@ -117,7 +117,7 @@ $(document).ready(function() {
 
   $.ajax({
     type: "GET",
-    url: "https://networkauditor.org/api-teamsaber/getsongleaderboards/all/19",
+    url: "https://networkauditor.org/api-teamsaber/getsongleaderboards/all/19/",
     dataType: "json",
     success: function(data) {
       var loading = $('#loading');
