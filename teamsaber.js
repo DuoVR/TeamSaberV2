@@ -85,34 +85,6 @@ teams = {
    }
 }
 
-points = {
-  1: "+15",
-  2: "+12",
-  3: "+10",
-  4: "+9",
-  5: "+8",
-  6: "+7",
-  7: "+6",
-  8: "+5",
-  9: "+5",
-  10: "+4",
-  11: "+4",
-  12: "+3",
-  13: "+3",
-  14: "+2",
-  15: "+2",
-  16: "+1",
-  17: "+1",
-  18: "+1",
-  19: "+1",
-  20: "+0",
-  21: "+0",
-  22: "+0",
-  23: "+0",
-  24: "+0",
-  25: "+0"
-}
-
 $(document).ready(function() {
   $.ajaxPrefilter(function(options) {
     if (options.crossDomain && jQuery.support.cors) {
@@ -123,7 +95,7 @@ $(document).ready(function() {
 
   $.ajax({
     type: "GET",
-    url: "https://networkauditor.org/api-teamsaber/getsongleaderboards/all/25/",
+    url: "https://networkauditor.org/api-teamsaber/getsongleaderboards/all/50/",
     dataType: "json",
     success: function(data) {
       var loading = $('#loading');
@@ -148,7 +120,6 @@ $(document).ready(function() {
         }
         var team = teams[teamid]["teamName"];
         var color = teams[teamid]["color"];
-        var point = points[rank]
         var html = '<tr><td class="col1"><font color="' + color + '">';
         if (rank == 1) {
           ranked = "♛";
@@ -158,7 +129,7 @@ $(document).ready(function() {
         }
         html += ranked
         html += ' : [' + team + '] ' + player + ' : ';
-        html += score.toLocaleString() + " (" + point + ')</font></td></tr>';
+        html += score.toLocaleString() + '</font></td></tr>';
 
         tbody.append(html);
       }
@@ -167,49 +138,117 @@ $(document).ready(function() {
 });
 
 function show1() {
-  var song1 = $('#' + "206-124");
-  var song2 = $('#' + "4690-4449");
-  var song3 = $('#' + "10652-11215");
+  console.log("SHOW 1");
+  var song1 = $('#' + "7758-8922");
+  var song2 = $('#' + "6716-6357");
+  var song3 = $('#' + "1770-1235");
+  var song4 = $('#' + "8129-8185");
+  var song5 = $('#' + "3646-2761");
   var tab1 = $('#one');
   var tab2 = $('#two');
   var tab3 = $('#three');
-  console.log("SHOW 206-124");
+  var tab4 = $('#four');
+  var tab5 = $('#five');
   song1.show();
   song2.hide();
   song3.hide();
+  song4.hide();
+  song5.hide();
   tab1.addClass('active');
   tab2.removeClass('active');
   tab3.removeClass('active');
+  tab4.removeClass('active');
+  tab5.removeClass('active');
 }
-
 function show2() {
-  var song1 = $('#' + "206-124");
-  var song2 = $('#' + "4690-4449");
-  var song3 = $('#' + "10652-11215");
+  console.log("SHOW 2");
+  var song1 = $('#' + "7758-8922");
+  var song2 = $('#' + "6716-6357");
+  var song3 = $('#' + "1770-1235");
+  var song4 = $('#' + "8129-8185");
+  var song5 = $('#' + "3646-2761");
   var tab1 = $('#one');
   var tab2 = $('#two');
   var tab3 = $('#three');
-  console.log("SHOW 4690-4449");
+  var tab4 = $('#four');
+  var tab5 = $('#five');
   song1.hide();
   song2.show();
   song3.hide();
+  song4.hide();
+  song5.hide();
   tab1.removeClass('active');
   tab2.addClass('active');
   tab3.removeClass('active');
+  tab4.removeClass('active');
+  tab5.removeClass('active');
 }
-
 function show3() {
-  var song1 = $('#' + "206-124");
-  var song2 = $('#' + "4690-4449");
-  var song3 = $('#' + "10652-11215");
+  console.log("SHOW 3");
+  var song1 = $('#' + "7758-8922");
+  var song2 = $('#' + "6716-6357");
+  var song3 = $('#' + "1770-1235");
+  var song4 = $('#' + "8129-8185");
+  var song5 = $('#' + "3646-2761");
   var tab1 = $('#one');
   var tab2 = $('#two');
   var tab3 = $('#three');
-  console.log("SHOW 10652-11215");
+  var tab4 = $('#four');
+  var tab5 = $('#five');
   song1.hide();
   song2.hide();
   song3.show();
+  song4.hide();
+  song5.hide();
   tab1.removeClass('active');
   tab2.removeClass('active');
   tab3.addClass('active');
+  tab4.removeClass('active');
+  tab5.removeClass('active');
+}
+function show4() {
+  console.log("SHOW 4");
+  var song1 = $('#' + "7758-8922");
+  var song2 = $('#' + "6716-6357");
+  var song3 = $('#' + "1770-1235");
+  var song4 = $('#' + "8129-8185");
+  var song5 = $('#' + "3646-2761");
+  var tab1 = $('#one');
+  var tab2 = $('#two');
+  var tab3 = $('#three');
+  var tab4 = $('#four');
+  var tab5 = $('#five');
+  song1.hide();
+  song2.hide();
+  song3.hide();
+  song4.show();
+  song5.hide();
+  tab1.removeClass('active');
+  tab2.removeClass('active');
+  tab3.removeClass('active');
+  tab4.addClass('active');
+  tab5.removeClass('active');
+}
+function show5() {
+  console.log("SHOW 5");
+  var song1 = $('#' + "7758-8922");
+  var song2 = $('#' + "6716-6357");
+  var song3 = $('#' + "1770-1235");
+  var song4 = $('#' + "8129-8185");
+  var song5 = $('#' + "3646-2761");
+  var tab1 = $('#one');
+  var tab2 = $('#two');
+  var tab3 = $('#three');
+  var tab4 = $('#four');
+  var tab5 = $('#five');
+  song1.hide();
+  song2.hide();
+  song3.hide();
+  song4.hide();
+  song5.show();
+  tab1.removeClass('active');
+  tab2.removeClass('active');
+  tab3.removeClass('active');
+  tab4.removeClass('active');
+  tab5.addClass('active');
 }
