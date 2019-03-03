@@ -107,10 +107,13 @@ $(document).ready(function() {
   function readData(json) {
     show1();
     for (var song in json) {
+      console.log(song);
       var songdata = json[song];
       var songId = songdata["songId"];
       var tbody = $('#' + songId + ' tbody');
+      console.log(songId);
       var scores = songdata["scores"];
+      console.log(scores);
       for (var rank in scores) {
         var player = scores[rank]["player"];
         var score = scores[rank]["score"];
@@ -130,6 +133,8 @@ $(document).ready(function() {
         html += ranked
         html += ' : [' + team + '] ' + player + ' : ';
         html += score.toLocaleString() + '</font></td></tr>';
+
+        console.log(html);
 
         tbody.append(html);
       }
