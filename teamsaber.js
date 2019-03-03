@@ -144,7 +144,7 @@ $(document).ready(function() {
 
 function show1() {
   console.log("SHOW 1");
-  var song1 = $('#' + "7758-8922");
+  var song1 = $('#' + "11584-12318");
   var song2 = $('#' + "6716-6357");
   var song3 = $('#' + "1770-1235");
   var song4 = $('#' + "8129-8185");
@@ -167,7 +167,7 @@ function show1() {
 }
 function show2() {
   console.log("SHOW 2");
-  var song1 = $('#' + "7758-8922");
+  var song1 = $('#' + "11584-12318");
   var song2 = $('#' + "6716-6357");
   var song3 = $('#' + "1770-1235");
   var song4 = $('#' + "8129-8185");
@@ -190,7 +190,7 @@ function show2() {
 }
 function show3() {
   console.log("SHOW 3");
-  var song1 = $('#' + "7758-8922");
+  var song1 = $('#' + "11584-12318");
   var song2 = $('#' + "6716-6357");
   var song3 = $('#' + "1770-1235");
   var song4 = $('#' + "8129-8185");
@@ -213,7 +213,7 @@ function show3() {
 }
 function show4() {
   console.log("SHOW 4");
-  var song1 = $('#' + "7758-8922");
+  var song1 = $('#' + "11584-12318");
   var song2 = $('#' + "6716-6357");
   var song3 = $('#' + "1770-1235");
   var song4 = $('#' + "8129-8185");
@@ -236,7 +236,7 @@ function show4() {
 }
 function show5() {
   console.log("SHOW 5");
-  var song1 = $('#' + "7758-8922");
+  var song1 = $('#' + "11584-12318");
   var song2 = $('#' + "6716-6357");
   var song3 = $('#' + "1770-1235");
   var song4 = $('#' + "8129-8185");
