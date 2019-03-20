@@ -104,13 +104,24 @@ $(document).ready(function() {
     }
   });
 
+  var tagsI = ["t1", "t2", "t3", "t4"]
+  var tagsN = ["one", "two", "three", "four"]
+  var tagN = 0
+
   function readData(json) {
     show1();
     for (var song in json) {
       console.log(song);
       var songdata = json[song];
       var songId = songdata["songId"];
-      var tbody = $('#' + songId + ' tbody');
+      var tbody = $('#' + tagsI[tagN] + ' tbody');
+      var name = $('#' + tagsN[tagN]);
+      words = songdata["songName"].split(" ");
+      s = words[0];
+      name.text(s);
+      console.log("Name:" + name);
+      console.log("Song:" + s);
+      tagN += 1
       console.log(songId);
       var scores = songdata["scores"];
       console.log(scores);
@@ -144,116 +155,77 @@ $(document).ready(function() {
 
 function show1() {
   console.log("SHOW 1");
-  var song1 = $('#' + "11584-12318");
-  var song2 = $('#' + "6716-6357");
-  var song3 = $('#' + "1770-1235");
-  var song4 = $('#' + "8129-8185");
-  var song5 = $('#' + "3646-2761");
+  var song1 = $('#' + "t1");
+  var song2 = $('#' + "t2");
+  var song3 = $('#' + "t3");
+  var song4 = $('#' + "t4");
   var tab1 = $('#one');
   var tab2 = $('#two');
   var tab3 = $('#three');
   var tab4 = $('#four');
-  var tab5 = $('#five');
   song1.show();
   song2.hide();
   song3.hide();
   song4.hide();
-  song5.hide();
   tab1.addClass('active');
   tab2.removeClass('active');
   tab3.removeClass('active');
   tab4.removeClass('active');
-  tab5.removeClass('active');
 }
 function show2() {
   console.log("SHOW 2");
-  var song1 = $('#' + "11584-12318");
-  var song2 = $('#' + "6716-6357");
-  var song3 = $('#' + "1770-1235");
-  var song4 = $('#' + "8129-8185");
-  var song5 = $('#' + "3646-2761");
+  var song1 = $('#' + "t1");
+  var song2 = $('#' + "t2");
+  var song3 = $('#' + "t3");
+  var song4 = $('#' + "t4");
   var tab1 = $('#one');
   var tab2 = $('#two');
   var tab3 = $('#three');
   var tab4 = $('#four');
-  var tab5 = $('#five');
   song1.hide();
   song2.show();
   song3.hide();
   song4.hide();
-  song5.hide();
   tab1.removeClass('active');
   tab2.addClass('active');
   tab3.removeClass('active');
   tab4.removeClass('active');
-  tab5.removeClass('active');
 }
 function show3() {
   console.log("SHOW 3");
-  var song1 = $('#' + "11584-12318");
-  var song2 = $('#' + "6716-6357");
-  var song3 = $('#' + "1770-1235");
-  var song4 = $('#' + "8129-8185");
-  var song5 = $('#' + "3646-2761");
+  var song1 = $('#' + "t1");
+  var song2 = $('#' + "t2");
+  var song3 = $('#' + "t3");
+  var song4 = $('#' + "t4");
   var tab1 = $('#one');
   var tab2 = $('#two');
   var tab3 = $('#three');
   var tab4 = $('#four');
-  var tab5 = $('#five');
   song1.hide();
   song2.hide();
   song3.show();
   song4.hide();
-  song5.hide();
   tab1.removeClass('active');
   tab2.removeClass('active');
   tab3.addClass('active');
   tab4.removeClass('active');
-  tab5.removeClass('active');
 }
 function show4() {
   console.log("SHOW 4");
-  var song1 = $('#' + "11584-12318");
-  var song2 = $('#' + "6716-6357");
-  var song3 = $('#' + "1770-1235");
-  var song4 = $('#' + "8129-8185");
-  var song5 = $('#' + "3646-2761");
+  var song1 = $('#' + "t1");
+  var song2 = $('#' + "t2");
+  var song3 = $('#' + "t3");
+  var song4 = $('#' + "t4");
   var tab1 = $('#one');
   var tab2 = $('#two');
   var tab3 = $('#three');
   var tab4 = $('#four');
-  var tab5 = $('#five');
   song1.hide();
   song2.hide();
   song3.hide();
   song4.show();
-  song5.hide();
   tab1.removeClass('active');
   tab2.removeClass('active');
   tab3.removeClass('active');
   tab4.addClass('active');
-  tab5.removeClass('active');
-}
-function show5() {
-  console.log("SHOW 5");
-  var song1 = $('#' + "11584-12318");
-  var song2 = $('#' + "6716-6357");
-  var song3 = $('#' + "1770-1235");
-  var song4 = $('#' + "8129-8185");
-  var song5 = $('#' + "3646-2761");
-  var tab1 = $('#one');
-  var tab2 = $('#two');
-  var tab3 = $('#three');
-  var tab4 = $('#four');
-  var tab5 = $('#five');
-  song1.hide();
-  song2.hide();
-  song3.hide();
-  song4.hide();
-  song5.show();
-  tab1.removeClass('active');
-  tab2.removeClass('active');
-  tab3.removeClass('active');
-  tab4.removeClass('active');
-  tab5.addClass('active');
 }
