@@ -95,7 +95,7 @@ $(document).ready(function() {
 
   $.ajax({
     type: "GET",
-    url: "https://networkauditor.org/api-teamsaber/getsongleaderboards/all/50/",
+    url: "https://networkauditor.org/api-teamsaber/leaderboards/all/50/",
     dataType: "json",
     success: function(data) {
       var loading = $('#loading');
